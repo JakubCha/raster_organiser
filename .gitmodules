@@ -1,0 +1,3 @@
+[submodule "raster_organiser/qgis_plugin_tools"]
+	path = raster_organiser/qgis_plugin_tools
+	url = https://github.com/GispoCoding/qgis_plugin_tools

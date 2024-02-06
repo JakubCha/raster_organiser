@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingsDialogNew</class>
+ <widget class="QDialog" name="SettingsDialogNew">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>535</width>
+    <height>220</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SettingsDialog</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/plugins/raster_organiser/resources/icons/settings.svg</normaloff>:/plugins/raster_organiser/resources/icons/settings.svg</iconset>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>511</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="input_lbl">
+      <property name="text">
+       <string>Input Vector Layer:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QgsMapLayerComboBox" name="mlcb"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="file_selection_button">
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QDialogButtonBox" name="dialogBox">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>180</y>
+     <width>156</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsMapLayerComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qgsmaplayercombobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <connections>
+  <connection>
+   <sender>dialogBox</sender>
+   <signal>accepted()</signal>
+   <receiver>SettingsDialogNew</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>257</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>267</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dialogBox</sender>
+   <signal>rejected()</signal>
+   <receiver>SettingsDialogNew</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>257</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>267</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

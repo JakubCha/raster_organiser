@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="plugins/raster_organiser">
+    <file>resources/icons/settings.svg</file>
+  </qresource>
+</RCC>
