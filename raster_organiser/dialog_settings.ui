@@ -14,7 +14,7 @@
    <string>SettingsDialog</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="resources.qrc">
+   <iconset>
     <normaloff>:/plugins/raster_organiser/resources/icons/settings.svg</normaloff>:/plugins/raster_organiser/resources/icons/settings.svg</iconset>
   </property>
   <widget class="QWidget" name="verticalLayoutWidget">
@@ -54,13 +54,26 @@
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>180</y>
+     <y>170</y>
      <width>156</width>
      <height>23</height>
     </rect>
    </property>
    <property name="standardButtons">
     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>@jch</string>
    </property>
   </widget>
  </widget>
@@ -71,6 +84,7 @@
    <header>qgsmaplayercombobox.h</header>
   </customwidget>
  </customwidgets>
+ <resources/>
  <connections>
   <connection>
    <sender>dialogBox</sender>
